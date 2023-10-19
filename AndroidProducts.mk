@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_odin.mk
+    $(LOCAL_DIR)/arrow_odin.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_odin-user \
-    lineage_odin-userdebug \
-    lineage_odin-eng
+    arrow_odin-user \
+    arrow_odin-userdebug \
+    arrow_odin-eng

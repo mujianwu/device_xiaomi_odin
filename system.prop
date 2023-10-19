@@ -139,7 +139,7 @@ ro.charger.enable_suspend=1
 #Disable MTE Async for system server
 arm64.memtag.process.system_server=off
 # Disable blur on app launch
-ro.launcher.blur.appLaunch=0
+ro.launcher.blur.appLaunch=false
 #button jack mode & switch
 persist.audio.button_jack.profile=volume
 persist.audio.button_jack.switch=0
