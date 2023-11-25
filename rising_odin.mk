@@ -3,14 +3,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common rising stuff
+$(call inherit-product, vendor/rising/config/rising.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from odin device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# RisingOS flags
+#WITH_GMS := true
+#TARGET_PREBUILT_PIXEL_LAUNCHER := true
+#TARGET_ENABLE_PIXEL_FEATURES := true
+#TARGET_USE_GOOGLE_TELEPHONY := true
+RISING_MAINTAINER := MJW
+RISING_CHIPSET := Snapdragon 888
+RISING_BATTERY := 4500mAh
+RISING_DISPLAY := 2400×1080
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := odin
